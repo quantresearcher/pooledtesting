@@ -1,3 +1,4 @@
+"""Simulator for running multiple testing strategies."""
 import numpy as np
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor

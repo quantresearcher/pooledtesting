@@ -1,3 +1,4 @@
+"""Contains class for generating populations with given characteristics."""
 import numpy as np
 from scipy.linalg import block_diag
 from .utils import (

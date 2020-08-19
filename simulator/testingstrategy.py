@@ -1,3 +1,4 @@
+"""Classes for all testing strategies."""
 import numpy as np
 from abc import abstractmethod, ABCMeta
 

@@ -1,3 +1,6 @@
+"""A collection of functions for calculating the expected number of tests
+required in two-stage hierarchical testing.
+"""
 import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))

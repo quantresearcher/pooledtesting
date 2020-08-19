@@ -1,3 +1,4 @@
+"""A miscellaneous collection of functions."""
 import numpy as np
 from collections.abc import Iterable
 from functools import lru_cache, wraps
