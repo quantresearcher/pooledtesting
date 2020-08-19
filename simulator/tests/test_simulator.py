@@ -37,7 +37,7 @@ class SimulatorTests(TestCase):
                             pd.Series(data = [0.28],
                                       index = [str(strategy)]),
                             check_index_type = False,
-                            check_less_precise = 2)
+                            atol = 1e-2)
         ax = simulator.plot()
         y = ax.lines[-1].get_xydata()[:, 1]
         assert_array_equal(y, tests_per_person)
@@ -60,7 +60,7 @@ class SimulatorTests(TestCase):
                                 pd.Series(data = [0.361, 0.28, 0.524],
                                           index = [str(strategy) for strategy in strategies]),
                                 check_index_type = False,
-                                check_less_precise = 2)
+                                atol = 1e-2)
             ax = simulator.plot()
             y = ax.lines[-1].get_xydata()[:, 1]
             assert_array_equal(y, tests_per_person)
