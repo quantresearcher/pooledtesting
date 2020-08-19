@@ -1,6 +1,6 @@
 import numpy as np
 from numpy.testing import assert_allclose, assert_array_equal
-from unittest import main, TestCase
+from unittest import TestCase
 from ..populationdistribution import (
     ImpossiblePopulationDistribution,
     PopulationDistribution
@@ -299,8 +299,3 @@ class PopulationDistributionTests(TestCase):
                                                              cluster_correlations = [(0.25, 3), (0.25, 3)],
                                                              num_samples = NUM_SAMPLES,
                                                              random_state = RANDOM_STATE)
-
-
-if __name__ == '__main__':
-    from unittest import main
-    main()

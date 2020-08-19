@@ -1,6 +1,6 @@
 import numpy as np
 from numpy.testing import assert_allclose
-from unittest import main, TestCase
+from unittest import TestCase
 from ..utils import (
     count_not_none,
     freeze_iterable_arguments,
@@ -182,9 +182,3 @@ class MiscellaneousTests(TestCase):
         self.assertIn(6, iterable2)
         self.assertIn(7, iterable2)
         self.assertEqual(iterable3, tuple([8, 9]))
-
-
-
-if __name__ == '__main__':
-    from unittest import main
-    main()
