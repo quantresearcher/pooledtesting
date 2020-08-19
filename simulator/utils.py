@@ -124,7 +124,7 @@ def simulate_correlated_bernoulli(p,
         * If `correlation` is a square matrix with the same number of
           rows/columns as the number of elements in `p`.
         * If `correlation` is a non-symmetric matrix.
-        * If `correlation` is a not a positive semi-definite matrix.
+        * If `correlation` is not a positive semi-definite matrix.
     ImpossibleDistribution
         If no Bernoulli samples consistent with the given `p` and
         `correlation` can be generated.
