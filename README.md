@@ -35,11 +35,11 @@ simulator.plot()
 
 <img src = "images/plot.png" width = "800">
 
-We can see in this case that the optimal pool size is 6 and that this leads to a reduction in the number of tests by almost 62% compared to when everyone is tested individually.
+In this case the optimal pool size is 6 and this leads to a reduction in the number of tests by almost 62% compared to when everyone is tested individually.
 
 ## Raison d'être
 
-In order to facilitate understanding of the value of pooled testing and the relative importance of the factors that impact its value, we have developed an app (TODO: add url) that enables users to see how different values for the prevalence, correlation, etc affect the optimal pool size in two-stage hierarchical testing.
+In order to facilitate understanding of the value of pooled testing and the relative importance of the factors that impact its value, an app (TODO: add url) has been developed that enables users to see how different values for the prevalence, correlation, etc affect the optimal pool size in two-stage hierarchical testing.
 
 <img src = "images/bokehapp.png" width = "1300">
 
