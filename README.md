@@ -39,7 +39,7 @@ In this case the optimal pool size is 6 and this leads to a reduction in the num
 
 ## Raison d'être
 
-In order to facilitate understanding of the value of pooled testing and the relative importance of the factors that impact its value, an app (TODO: add url) has been developed that enables users to see how different values for the prevalence, correlation, etc affect the optimal pool size in two-stage hierarchical testing.
+In order to facilitate understanding of the value of pooled testing and the relative importance of the factors that impact its value, an app (http://pooledtesting.herokuapp.com/) has been developed that enables users to see how different values for the prevalence, correlation, etc affect the optimal pool size in two-stage hierarchical testing.
 
 <img src = "images/bokehapp.png" width = "1300">
 

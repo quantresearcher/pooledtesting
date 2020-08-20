@@ -5,7 +5,7 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 
 APP_TITLE = 'Pooled Testing'
-NUM_TRIALS = 20000
+NUM_TRIALS = 10000
 RANDOM_STATE = 42
 
 ########################### Header ###########################
