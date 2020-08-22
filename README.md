@@ -35,7 +35,7 @@ simulator.plot()
 
 <img src = "images/plot.png" width = "800">
 
-In this case the optimal pool size is 6 and this leads to a reduction in the number of tests by almost 62% compared to when everyone is tested individually.
+In this case, the optimal pool size is 7 and this leads to a reduction of more than 60% in the number of tests compared to when everyone is tested individually.
 
 ## Raison d'être
 
@@ -46,3 +46,23 @@ In order to facilitate understanding of the value of pooled testing and the rela
 To view the app locally from a Bokeh server, run the following command in a terminal:
 
     bokeh serve --show evangelist
+
+## Challenge
+
+For an office of 9 people where the probability of each person being infected is given by
+
+    [0.01, 0.02, 0.03, 0.04, 0.31, 0.32, 0.33, 0.8, 0.9]
+
+and where the correlations of being infected is given by
+
+    [[1. , 0.2, 0.2, 0.2, 0. , 0. , 0. , 0. , 0. ],
+     [0.2, 1. , 0.2, 0.2, 0. , 0. , 0. , 0. , 0. ],
+     [0.2, 0.2, 1. , 0.2, 0. , 0. , 0. , 0. , 0. ],
+     [0.2, 0.2, 0.2, 1. , 0. , 0. , 0. , 0. , 0. ],
+     [0. , 0. , 0. , 0. , 1. , 0.9, 0.9, 0. , 0. ],
+     [0. , 0. , 0. , 0. , 0.9, 1. , 0.9, 0. , 0. ],
+     [0. , 0. , 0. , 0. , 0.9, 0.9, 1. , 0. , 0. ],
+     [0. , 0. , 0. , 0. , 0. , 0. , 0. , 1. , 0.7],
+     [0. , 0. , 0. , 0. , 0. , 0. , 0. , 0.7, 1. ]]
+
+devise a testing strategy (assuming the diagnostic test has perfect sensitivity and specificity) that will reduce the expected number of tests by at least 31% compared to when everyone is tested individually.
