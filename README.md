@@ -35,7 +35,7 @@ simulator.plot()
 
 <img src = "images/plot.png" width = "800">
 
-In this case, the optimal pool size is 7 and this leads to a reduction of more than 60% in the number of tests compared to when everyone is tested individually.
+In this case, the optimal pool size is 7 and this leads to a reduction of more than 60% in the number of tests compared to when everyone is tested individually. For a more in-depth discussion of the steps involved, check out this [notebook](simulator/example.ipynb).
 
 ## Raison d'être
 
