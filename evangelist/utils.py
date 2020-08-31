@@ -24,7 +24,8 @@ def _memoise(func):
     func : function
         The function should contain an argument named `pool_sizes` whose type
         is either an int or an array. The function must return a dict whose
-        keys are the element(s) in `pool_sizes`.
+        keys are the element(s) in `pool_sizes`. The function must not have
+        any default arguments.
     
     Returns
     -------
@@ -59,7 +60,7 @@ def get_number_of_tests_simulated(prevalence,
                                   specificity,
                                   pool_sizes,
                                   num_trials,
-                                  random_state = None):
+                                  random_state):
     """Returns a dict of the expected number of tests per person keyed by pool
     size when two-stage hierarchical testing is carried out.
 
@@ -82,9 +83,10 @@ def get_number_of_tests_simulated(prevalence,
         sizes must be greater than 1.
     num_trials : int
         The number of simulations to run.
-    random_state : int, optional
+    random_state : int
         If an int is given, `random_state` is the seed that will be used by
-        the random number generator.
+        the random number generator. If None is given, then the random number
+        generator is the RandomState instance used by `numpy.random`.
     
     Returns
     -------
