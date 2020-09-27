@@ -1,6 +1,6 @@
 # PooledTesting
 
-PooledTesting is a Python library for simulating various pooled testing strategies for COVID-19. It can be used by researchers to determine the expected number of tests required for a given strategy and thus be used to solve for optimal testing configurations such as the pool size to employ.
+PooledTesting is a Python library for simulating various [pooled testing](https://medium.com/@quantresearcher/how-to-test-a-million-people-for-covid-19-without-a-million-test-kits-8e501ba474bc) strategies for COVID-19. It can be used by researchers to determine the expected number of tests required for a given strategy and thus be used to solve for optimal testing configurations such as the pool size to employ.
 
 PooledTesting was designed with two main objectives in mind:
 * **fast execution:** strategies are implemented using vectorized NumPy operations and multiple strategies are run in parallel
